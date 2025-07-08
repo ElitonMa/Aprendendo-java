@@ -11,15 +11,14 @@ public class simuladorLogin {
             System.out.println("Digite a sua senha");
             senhaTentativa = scanner.nextLine();
 
-            System.out.println(senhaTentativa);
-            if (senhaTentativa != senhaFixa) {
-                System.err.println("Senha incorreta!");
-            }
-            else if (senhaTentativa == senhaFixa) {
+            if (senhaTentativa.equals(senhaFixa)) {
                 System.out.println("Acesso permitido");
                 senhaCorreta = true;
             }
-            
+            else {
+                System.err.println("Senha incorreta!");
+            }
+
         } while (!senhaCorreta);
         scanner.close();
     }
