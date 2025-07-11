@@ -28,5 +28,7 @@ public class CalculoPotencia {
         int valor = calcularPotencia(base, expoente);
 
         System.out.println("O numero " + base + " Elevado a " + expoente + " = " + valor);
+
+        scanner.close();
     }
 }

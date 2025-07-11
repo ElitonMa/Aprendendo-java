@@ -13,6 +13,7 @@ public class notaDeAlunos {
                 notasAlunos[i] = scanner.nextInt();
             } catch (Exception e) {
                 System.err.println("Número invalido");
+                scanner.close();
                 return;
             }
             
@@ -24,5 +25,6 @@ public class notaDeAlunos {
             }
         }
 
+        scanner.close();
     }   
 }
