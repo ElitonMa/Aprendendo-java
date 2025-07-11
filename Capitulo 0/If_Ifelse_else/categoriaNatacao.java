@@ -1,3 +1,4 @@
+package If_Ifelse_else;
 import java.util.Scanner;
 
 public class categoriaNatacao {

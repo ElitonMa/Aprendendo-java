@@ -1,3 +1,4 @@
+package Lacos_de_repeticao;
 import java.util.Scanner;
 
 public class simuladorLogin {

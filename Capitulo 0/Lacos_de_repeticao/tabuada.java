@@ -1,3 +1,4 @@
+package Lacos_de_repeticao;
 public class tabuada {
     public static void main(String[] args) {
         int numero = 5;

@@ -1,18 +1,19 @@
+package If_Ifelse_else;
 import java.util.Scanner;
 
-public class elevarQuadrado {
+public class negativoPositivo {
     public static void main(String[] args) {
+        
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Digite um número");
         float numero = scanner.nextFloat();
 
         if (numero >= 0) {
-            float numeroSquared = numero*numero;
-            System.out.println("Seu número elevado ao quadrado é: " + numeroSquared);
+            System.out.println("Seu número " + numero + " é positivo!");
         }
         else {
-            System.out.println("Número invalido!");
+            System.out.println("Seu número " + numero + " é negativo");
         }
 
         scanner.close();

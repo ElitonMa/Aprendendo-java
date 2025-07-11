@@ -1,3 +1,4 @@
+package Lacos_de_repeticao;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -11,13 +12,14 @@ public class jogoAdivinhacao {
         
         boolean acertouNumero = false;
         int numeroTentativa;
-
+        
         do {
             try {
                 System.out.println("Digite um número para tentar adivinhar o número gerado aleatoriamente");
                 numeroTentativa = scanner.nextInt();
             } catch (Exception e) {
                 System.err.println("Não é um número.");
+                scanner.close();
                 return;
             }
 
@@ -34,5 +36,6 @@ public class jogoAdivinhacao {
 
         } while (!acertouNumero);
 
+        scanner.close();
     }
 }
