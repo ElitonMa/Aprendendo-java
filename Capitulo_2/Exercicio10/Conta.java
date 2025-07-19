@@ -1,4 +1,5 @@
 package Capitulo_2.Exercicio10;
+
 import java.util.Random;
 
 public class Conta {
