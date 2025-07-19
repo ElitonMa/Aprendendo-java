@@ -12,9 +12,4 @@ public class Livro {
     void exibirInformacoes() {
         System.out.println("O livro " + titulo + " tem como autor " + autor);
     }
-
-    public static void main(String[] args) {
-        Livro livro = new Livro("Le Petit Prince","Antoine de Saint-Exupéry");
-        livro.exibirInformacoes();
-    }
 }

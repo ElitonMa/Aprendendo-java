@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         boolean escolheuSair = false;
-        double escolhasBanco;
+        int escolhasOpcoes = 0;
+        double escolhaValor = 0;
         Scanner scanner = new Scanner(System.in);
         ContaBancaria conta = new ContaBancaria();
 
@@ -11,43 +12,43 @@ public class Main {
             System.out.println("Bem-vindo ao simualdor de conta bancária.");
             try {
                 System.out.println("0 = sair, 1 = depositar, 2 = sacar, 3 = exibir saldo"); 
-                escolhasBanco = scanner.nextDouble();      
+                escolhasOpcoes = scanner.nextInt();      
             } catch (Exception e) {
                 System.err.println("Valor invalido!");
                 break;
             }
 
-            switch (escolhasBanco) {
-                case 0d:
+            switch (escolhasOpcoes) {
+                case 0:
                     escolheuSair = true;
                     break;
-                case 1d:
+                case 1:
                     try {
                         System.out.println("Quantos reais deseja depositar?");
-                        escolhasBanco = scanner.nextDouble();
+                        escolhaValor = scanner.nextInt();
                         } catch (Exception e) {
                         System.err.println("Valor invalido!");
                         break;
                         }
                     finally {
-                        conta.depositar(escolhasBanco);
+                        conta.depositar(escolhaValor);
                     }
                 break;
 
-                case 2d:
+                case 2:
                     try {
                         System.out.println("Quantos reais deseja sacar?");
-                        escolhasBanco = scanner.nextDouble();
+                        escolhaValor = scanner.nextDouble();
                     } catch (Exception e) {
                         System.err.println("Valor invalido!");
                         break;
                     }
                     finally {
-                        conta.sacar(escolhasBanco);
+                        conta.sacar(escolhaValor);
                     }
                 break;
                 
-                case 3d:
+                case 3:
                     conta.exibirSaldo();
                 break;
 

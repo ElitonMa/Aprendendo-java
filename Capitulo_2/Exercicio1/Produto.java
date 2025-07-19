@@ -12,8 +12,4 @@ public class Produto {
     void exibirNome(){
         System.out.println("O nome desse produto é: " + nome);
     }
-    public static void main(String[] args) {
-        Produto produto = new Produto("Pneu para caminhões");
-        produto.exibirNome();
-    }
 }

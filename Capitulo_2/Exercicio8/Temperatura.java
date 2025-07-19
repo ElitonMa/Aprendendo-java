@@ -11,10 +11,4 @@ public class Temperatura {
     void mostrarCelsius() {
         System.out.println("O valor em celsius é: " + celsius);
     }
-
-    public static void main(String[] args) {
-        Temperatura temperatura = new Temperatura(95d);
-
-        temperatura.mostrarCelsius();
-    }
 }
