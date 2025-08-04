@@ -1,3 +1,5 @@
+package Capitulo_3.Exercicio11;
+
 public class Cofrinho {
     private double total;
 
