@@ -2,15 +2,15 @@ package Capitulo_4.Exercicio15;
 
 public class Transporte {
     protected String nome;
-    protected float capacidade;
+    protected int capacidade;
 
     public void exibirDados() {
-        System.out.println("O transporte '" + nome + "' tem capacidade de " + capacidade + "Kg");
+        System.out.println("O transporte '" + nome + "' tem capacidade de " + capacidade + " pessoas");
     }
 
     public Transporte(String nome, float capacidade) {
         this.nome = nome;
-        this.capacidade = capacidade;
+        this.capacidade = (int) capacidade;
     }
 
     // Getters
@@ -28,6 +28,6 @@ public class Transporte {
     }
 
     public void setCapacidade(float capacidade) {
-        this.capacidade = capacidade;
+        this.capacidade = (int) capacidade;
     }
 }

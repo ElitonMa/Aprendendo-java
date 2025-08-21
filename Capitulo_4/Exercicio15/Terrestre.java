@@ -10,7 +10,7 @@ public class Terrestre extends Transporte {
 
     @Override
     public void exibirDados() {
-        System.out.println("O transporte terrestre '" + nome + "' tem capacidade de " + capacidade + "Kg e usa o combustivel '" + tipoCombustivel + "'");
+        System.out.println("O transporte terrestre '" + nome + "' tem capacidade de " + capacidade + " pessoas e usa o combustivel '" + tipoCombustivel + "'");
     }
 
     // Getters
